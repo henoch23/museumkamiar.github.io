@@ -1,0 +1,69 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #4DA8DA;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    display: grid;
+    place-items: center;
+    height: 600px;
+    padding: 250px 10%; /*buat konten ke tengah*/
+}
+
+.sub-title{
+    font-size: 50px;
+    color: #d6ecff;
+     text-align: center;
+}
+
+#services{
+    padding: 30px 0;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 18px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.services-list div h2{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.services-list div.box1:hover {
+    background: #279c44;
+    transform: translateY(-10px);
+}
+
+.services-list div.box2:hover {
+    background: #279c44;
+    transform: translateY(-10px);
+}
+
+.services-list div.box3:hover {
+    background: #810101;
+    transform: rotate(10deg);
+}
